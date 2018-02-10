@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    tools:context="com.example.gl552vw.IAK3_SyarahNurLatifah_Taaruf.MainActivity"
+    android:background="@color/bluegrey">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/heading_text"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textSize="@dimen/heading_size"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:backgroundTint="@color/colorAccent">
+
+            <TextView
+                android:layout_width="90sp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@string/nama_text_view"
+                android:textAllCaps="true" />
+
+            <EditText
+                android:id="@+id/nama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/nama_hint"
+                android:inputType="text"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="90sp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@string/umur_text_view"
+                android:textAllCaps="true" />
+
+            <EditText
+                android:id="@+id/umur"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/umur_hint"
+                android:inputType="number"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="90sp"
+                android:layout_height="wrap_content"
+                android:text="tahun"
+                android:textAllCaps="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/jk"
+                android:layout_width="90sp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Jenis Kelamin:"
+                android:textAllCaps="true" />
+
+            <RadioGroup
+                android:id="@+id/radioJk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/radioLk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radioLk" />
+
+                <RadioButton
+                    android:id="@+id/radioPr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radioPr" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="90sp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@string/status_text_view"
+                android:textAllCaps="true" />
+
+            <RadioGroup
+                android:id="@+id/radioStatus"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/belum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Belum menikah" />
+
+                <RadioButton
+                    android:id="@+id/pernah"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Duda/janda" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="90sp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@string/alamat_text_view"
+                android:textAllCaps="true" />
+
+            <EditText
+                android:id="@+id/alamat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textLongMessage"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="90sp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/kriteria_text_view"
+            android:textAllCaps="true" />
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TableRow>
+            <CheckBox
+                android:id="@+id/berhijab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Berhijab" />
+
+            <CheckBox
+                android:id="@+id/bercadar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bercadar" />
+
+            <CheckBox
+                android:id="@+id/berjanggut"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Berjanggut" />
+            </TableRow>
+
+            <TableRow>
+            <CheckBox
+                android:id="@+id/berkumis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Berkumis" />
+
+            <CheckBox
+                android:id="@+id/tinggi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tinggi" />
+            </TableRow>
+        </TableLayout>
+
+        <Button
+            android:id="@+id/btn_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="StatusKelayakan"
+            android:text="@string/button_status" />
+    </LinearLayout>
+
+</ScrollView>

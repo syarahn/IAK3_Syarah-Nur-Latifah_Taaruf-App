@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Taaruf App</string>
+    <string name="umur_text_view">Umur:</string>
+    <string name="nama_text_view">nama:</string>
+    <string name="heading_text">REGISTRASI</string>
+    <string name="status_text_view">Status:</string>
+    <string name="alamat_text_view">alamat:</string>
+    <string name="kriteria_text_view">kriteria:</string>
+    <string name="penghasilan_text_view">Penghasilan:</string>
+    <string name="nama_hint">Nama Lengkap</string>
+    <string name="umur_hint">Umur</string>
+    <string name="radio1">Laki-Laki</string>
+    <string name="radio2">Perempuan</string>
+    <string name="radio_status_1">Belum Menikah</string>
+    <string name="radio_status_2">Single</string>
+    <string name="button_status">Status Kelayakan</string>
+    <string name="radioPr">Perempuan</string>
+    <string name="radioLk">Laki-laki</string>
+
+</resources>
